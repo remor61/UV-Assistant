@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vitor.uva_analisador"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="25" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/logo_riscos"
+        android:label="UV - Assistant"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.vitor.uva_analisador.ActUva" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.vitor.uva_analisador.ActTelaRegistro"
+            android:label="@string/title_activity_tela_registro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.vitor.uva_analisador.ActTelaUsuarios1"
+            android:label="@string/title_activity_act_tela_usuarios1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.vitor.uva_analisador.ActDados"
+            android:label="Data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.vitor.uva_analisador.ActAjuda" />
+        <activity android:name="com.example.vitor.uva_analisador.NotificaAct" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.vitor.uva_analisador.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

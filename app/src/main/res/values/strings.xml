@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UV - Assistant</string>
+    <string name="title_activity_tela_registro">Register New User</string>
+    <string name="title_activity_act_tela_usuarios1">Registered Users</string>
+
+    <string name="lbl_salvar">Save</string>
+    <string name="lbl_alterar">Edit</string>
+    <string name="lbl_excluir">Delete</string>
+
+</resources>

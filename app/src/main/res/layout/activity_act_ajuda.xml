@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.vitor.uva_analisador.ActAjuda">
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/logo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="115dp"-->
+            <!--app:srcCompat="@drawable/logo_assistant"-->
+            <!--android:translationX="3dp"-->
+            <!--android:translationY="10dp" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:src="@drawable/tiposkin"-->
+            <!--android:translationY="20dp"-->
+            <!--/>-->
+
+        <!--<WebView-->
+            <!--android:id="@+id/textContent"-->
+            <!--android:background="@drawable/gradient"-->
+            <!--android:translationY="30dp"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_long"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Welcome to UV – Assistant: Skin Cancer Prevention."
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textColor="#602060"
+                    />
+
+                <!--android:text="Bem-vindo ao UV – Assistant: Analisador de Risco à Radiação Ultravioleta."-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="\nThis app has the objective of monitoring multiple users registered in our system, with the intention to warn them when the ultraviolet radiation become a hazard to their health. Now you are going to see some instructions on how to use the system (app + sensor module)."
+                    />
+
+                <!--android:text="\nEsse aplicativo tem o objetivo de monitorar múltiplos usuários registrados no nosso sistema, com a intenção de avisa-los no momento em que a radiação ultravioleta se tornar um risco para a sua saúde. Agora você verá algumas instruções de como usar o sistema (app + módulo do sensor)."
+
+                -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="\nREGISTER NEW USER"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    />
+
+                <!--android:text="\nREGISTRAR NOVO USUÁRIO"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="\nRegister yourself or any other user is the first thing that you have to do to use the UV – Assistant. To do that, you have to click on the “Register New User” option on the home screen. After that, you have to complete all the fields (name, age, and FPS) and then click on the camera icon to get your skin type. The picture must be taken together with the calibration card, like in the following picture:\n"
+                    />
+
+                <!--android:text="\nRegistrar você mesmo ou qualquer outro usuário é a primeira ação que você deve tomar para usar o  UV - Assistant. Para fazer isso, você deve clicar na opção 'Registrar Novo Usuário' na tela inicial. Depois disso, você deve completar todos os campos (nome, idade e FPS) e então clicar no ícone da câmera para escanear seu tipo de pele. A imagem precisa ser tirada junto com o cartão de calibração, como na seguinte imagem:\n"-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cartao_ajuda"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="\n\nConsider taking the picture under solar lighthing to get better precision. If you notice that the app classified your skin type wrongly, you can mark “Enable List” and choose your skin type manually. The skin types are the following ones:"
+                    />
+
+                <!--                    android:text="\nConsidere tirar a foto sob luz solar para ter uma maior precisão. Se você notar que o app classificou o seu tipo de pele de forma errada, você pode marcar 'Habilitar Lista' e escolher seu tipo de pele manualmente. Os tipos de pele são os seguintes:\n"
+-->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="\tPale White - Always burns, never tans"
+                    android:textStyle="bold"
+                    />
+
+                <!--android:text="\tBranco I - Sempre queima, nunca bronzeia;"-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pale_white"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="\n\tWhite – Usually burns, tans minimally"
+                    android:textStyle="bold"
+                    />
+
+                <!--android:text=\n\tBranco II - Normalmente queima, bronzeia pouco;""-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/white"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="\n\tCream White – Sometimes mild burn, tans uniformly"
+                    android:textStyle="bold"
+                    />
+
+                <!--android:text="\n\tMorena Clara - Queima pouco, bronzeia uniformemente;"-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cream_white"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="\n\tModerate Brown – Burns Minimally, always tans well"
+                    android:textStyle="bold"
+                    />
+
+                <!--android:text="\n\tMorena - Queima muito pouco, sempre bronzeia;"-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/moderate_brown"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="\n\n\tDark Brown – Very rarely burns, tans very easily"
+                    android:textStyle="bold"
+                    />
+
+                <!--android:text="\n\n\tMorena Escura - Quase nunca queima, sempre bronzeia;"-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dark_brown"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="\n\tDarkest Brown – Never burns, never tans"
+                    android:textStyle="bold"
+                    />
+
+                <!--android:text="\n\tNegra - Nunca quima, nunca bronzeia;"-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/darkest_brown"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="\n\nTo finish you must click in the three dots menu and select “Save”, then the user will be registered."
+                    />
+
+                <!--                    android:text="\n\nPara finalizar, você deve clicar no menu de três pontos e selecionar 'Salvar', então o usuário será registrado.."
+-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="\n\nREGISTERED USERS"
+
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    />
+
+                <!--android:text="\n\nUSUÁRIOS REGISTRADOS"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="\nIn this screen, you can see the list of the registered users, edit any of them or even delete any of them. To do that, you have to click over the user’s name and then edit any field that you wish and then select “save” in the three dots menu, or select “delete” in this menu if you wish to do that."
+                    />
+                <!--android:text="\nNessa tela você irá ver a lista de usuários registrados, editar qualquer um deles ou até excluir qualquer um deles. Para fazer isso, você deve clicar sobre o nome do usuário e então editar qualquer campo que você desejar, para então selecionar 'Salvar' no menu de três pontos, ou selecionar 'Excluir' nesse menu se você quiser fazer isso."
+                    -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="\nDATA"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    />
+
+                <!--android:text="\nDADOS"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="\nThe data screen is where you start the monitoring, by clicking in the “start” button. If you wish to finish the monitoring, you must click in the “stop” button. In this screen, you can also see the instant ultraviolet index, the elapsed time of the monitoring, in minutes, since it started and the connection status with the sensor module. Remember that you have to pair the module with your smartphone before starting the monitoring."
+
+                    />
+
+                <!--android:text="\nA tela de dados é onde você inicía o monitoramento, clicando no botão 'Start'. Se você deseja finalizar o monitoramento, você deve clicar no botão 'Stop'. Nessa tela também é possível ver o índice ultravioleta instantâneo, o tempo desde o início do monitoramento, em minutos. Lembre que você deve parear o modulo com o smartphone antes de iniciar o monitoramento."-->
+
+            </LinearLayout>
+            </ScrollView>
+
+
+            </LinearLayout>

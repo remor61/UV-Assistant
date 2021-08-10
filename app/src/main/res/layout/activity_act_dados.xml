@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vitor.uva_analisador.ActDados">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="365dp"
+        android:layout_height="565dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        tools:context=".MainActivity"
+        android:background="@drawable/gradeintdadso"
+        android:onClick="restartCounter"
+        tools:layout_editor_absoluteX="-8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="-16dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <ImageView
+            android:id="@+id/bttttiamge"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:translationY="50dp"
+            app:srcCompat="@android:drawable/stat_sys_data_bluetooth" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UV Index"
+            android:textSize="18dp"
+            android:textColor="#993dca"
+            android:translationX="230dp"
+            android:translationY="210dp"/>
+
+        <!--android:text="Íncide UV"-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elapsed Time"
+            android:textColor="#993dca"
+            android:textSize="18dp"
+            android:translationX="193dp"
+            android:translationY="358dp"/>
+
+        <!--android:text="Tempo Decorrido"-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Status da Conexão: "-->
+            <!--android:textSize="18dp"-->
+            <!--android:translationX="5dp"-->
+            <!--android:translationY="50dp"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": ..."
+            android:id="@+id/statusMessage"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:translationX="55dp"
+            android:translationY="62dp" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:translationX="203dp"
+            android:translationY="250dp"
+            android:src="@drawable/luzriativa"
+            android:id="@+id/imageView4" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:translationX="203dp"
+            android:translationY="100dp"
+            android:src="@drawable/luzriativa"/>
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Dispositivos pareados"-->
+            <!--android:id="@+id/button_PairedDevices"-->
+            <!--android:onClick="searchPairedDevices"-->
+            <!--android:background="@drawable/mybutton"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:translationY="55dp" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="   Iniciar descoberta   \n   de dispositivos   "-->
+            <!--android:id="@+id/button_DiscoveredDevices"-->
+            <!--android:onClick="discoverDevices"-->
+            <!--android:background="@drawable/mybutton"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:translationY="55dp" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:translationY="55dp"-->
+            <!--android:background="@drawable/mybutton"-->
+            <!--android:text="Notificação"-->
+            <!--android:onClick="notifyy"-->
+            <!--android:id="@+id/bt_notifica"-->
+            <!--android:textColor="#ffffff"/>-->
+
+        <ImageView
+            android:layout_width="300dp"
+            android:id="@+id/iamgemtroca"
+            android:layout_height="255dp"
+            android:src="@drawable/nivelzero"
+            android:translationX="-50dp"
+            android:translationY="120dp"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/button_start"
+            android:onClick="StartPic"
+            android:background="@drawable/mybutton"
+            android:textColor="#ffffff"
+            android:translationY="400dp"
+            android:translationX="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:translationY="400dp"
+            android:translationX="200dp"
+            android:background="@drawable/mybutton"
+            android:textColor="#ffffff"
+            android:id="@+id/button_stop"
+            android:onClick="StopPic" />
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="165dp"
+            app:srcCompat="@drawable/logo_english"
+            android:translationX="130dp"
+            android:translationY="425dp"
+            android:id="@+id/imageView3" />
+
+        <!--app:srcCompat="@drawable/logo_assistant"-->
+
+        <RelativeLayout
+            android:id="@+id/LayoutTime"
+            android:layout_width="78dp"
+            android:layout_height="82dp"
+            android:layout_below="@+id/iamgemtroca"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/imageView3">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:text="min"
+                android:textColor="#993dca"
+                android:textSize="15dp"
+                android:translationY="60dp"/>
+
+            <TextView
+                android:id="@+id/elapsedTime"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#993dca"
+                android:textSize="32sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/LayoutIUV"
+            android:layout_width="78dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/imageView4"
+            android:layout_toEndOf="@+id/imageView3">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:text="UVI"
+                android:textColor="#993dca"
+                android:textSize="15dp"
+                android:translationY="60dp"/>
+
+            <TextView
+                android:id="@+id/uvIndex"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#993dca"
+                android:textSize="32sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vitor.uva_analisador.ActUva">
+
+    <Button
+        android:id="@+id/bt_registro"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="336dp"
+        android:layout_height="45dp"
+        android:text="Register new user"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:translationY="319dp"
+        android:translationX="10dp"
+         />
+
+        <!--android:text="Registrar novo usuário"-->
+
+    <Button
+        android:id="@+id/bt_usuarios"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="336dp"
+        android:layout_height="45dp"
+        android:text="Registered users"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:translationY="379dp"
+        android:translationX="10dp" />
+
+    <!--        android:text="Usuários registrados"-->
+
+    <Button
+        android:id="@+id/bt_dados"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="336dp"
+        android:layout_height="45dp"
+        android:text="Data"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:translationY="439dp"
+        android:translationX="10dp" />
+
+    <!--android:text="Dados"-->
+
+    <Button
+        android:id="@+id/bt_ajuda"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="336dp"
+        android:layout_height="45dp"
+        android:text="Help"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:translationY="499dp"
+        android:translationX="10dp" />
+
+    <!--android:text="Ajuda"-->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="335dp"
+        android:layout_height="320dp"
+        android:translationX="9dp"
+        android:translationY="55dp"
+        app:srcCompat="@drawable/logo_english" />
+
+        <!--app:srcCompat="@drawable/logo_assistant"-->
+
+
+</android.support.constraint.ConstraintLayout>
