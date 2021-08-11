@@ -1,4 +1,4 @@
-# UV-Assistant
+# UV Assistant - Skin Cancer Prevention
 This is the code of the Android app of the UV Assistant - Skin Cancer Prevention project done by Vitor Delela and me in 2017 as our high school final project.
 
 We used Android Studio to develop the app in Java. Neither of us had previous experience or knowledge in Java and we created the app from scratch. The goal of the project was to to develop a system capable of monitoring the incidence of ultraviolet radiation and notify its users in the moment that this radiation starts to represent a risk to their health, according to their skin tones. In a long term, this could prevent people from getting skin cancer, which is the most common cancer type in the brazilian state of Rio Grande do Sul.
